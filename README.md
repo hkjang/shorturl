@@ -2,8 +2,8 @@
 
 Python + Flask + Redis + Docker를 활용한 Short URL 생성 및 리디렉션 서비스입니다.
 
-![Short URL Create](docs/shorturl_create.png)
-![Short URL Preview](docs/shorturl_preview.png)
+![Short URL Create](docs/shorturl_create.JPG)
+![Short URL Preview](docs/shorturl_preview.JPG)
 ## 주요 기능
 
 | 기능 | 설명 |
