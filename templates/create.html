@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Short URL 생성</title>
+  <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+</head>
+<body class="bg-light">
+  <div class="container mt-5">
+    <div class="card mx-auto shadow" style="max-width: 500px;">
+      <div class="card-body">
+        <h3 class="card-title text-center mb-4">Short URL 생성</h3>
+        <form method="POST">
+          <div class="mb-3">
+            <input type="url" name="originalUrl" class="form-control" placeholder="https://example.com" required>
+          </div>
+          <div class="d-grid">
+            <button type="submit" class="btn btn-primary">단축하기</button>
+          </div>
+        </form>
+        {% if short_url %}
+        <div class="alert alert-success mt-4 text-center" role="alert">
+          단축 URL: <a href="{{ short_url }}" target="_blank">{{ short_url }}</a>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</body>
+</html>
